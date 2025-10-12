@@ -1,32 +1,26 @@
-# Repository Name
+# Freedom Index Dashboard
 
 ## Overview
-This dashboard provides a demographic breakdown by country of birth , age , race ,gender , primary language etc. It includes comparative
-tables between countries. 
-
+This streamlist application provides an overview of the Freedom index by country or by regions based on the [Freedom House](https://freedomhouse.org/)
 ### Contributor(s) :
 Francis Mangala
 ### Coding Language :
-Python , Pandas
-### Software Used : 
-Tableau
+Python , Streamlit , Plotly
 ### Process :
-  - Downloaded raw data from the World Bank Website
-  - Used python code to clean data and convert file to csv
-  - Uploaded file in Tableau
-  - Created visualizations
+  - Created a github repository
+  - Downloaded raw data from the Freedom House Website
+  - Created visualizations using Streamlit
 ### Description :
 The main dashboard includes : 
-  - Main Table
-  - Regional Map
-  - Demographics : Country of Birth
-  - Demographics : Race
-  - Demographics : Gender
-  - Demographics : Primary Language
-  - Relevant filters
+  - Side Bar (right) : Filters by Region , Year , and Freedom Status , Score Explained (Button)
+  - Map
+  - KPIs : Average Score , Country Count, MAX Score, Min Score
+  - Line Chart : Trend by Country
+  - Dataset : Available for Download
+  - Side bar left : Glossary
 ### Data Source :
-  - [World Bank Data](https://data.worldbank.org/)
-### Useful Links :
-
-### Important Calculations :
+  - [Freedom House](https://data.worldbank.org/)
+ ### Useful Links :
+ - [Freedom House Scoring Process](https://freedomhouse.org/reports/freedom-world/freedom-world-research-methodology)
+ 
 
