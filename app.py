@@ -29,16 +29,17 @@ def data_load():
     '''
     renaming the values c as Country and t as territory
     '''
-    df_freedom["C/T"] = df_freedom["C/T"].replace({'c':'Country','t':'Territory'})
-    df_freedom["Year"] = pd.to_numeric(df_freedom["Year"],errors="coerce")
-    df_freedom["Total Score"] = pd.to_numeric(df_freedom["Total Score"],errors="coerce")
+    if "C/T" in df_freedom.columns:
+        df_freedom["C/T"] = df_freedom["C/T"].replace({"c": "Country", "t": "Territory"})
+        df_freedom["Year"] = pd.to_numeric(df_freedom["Year"],errors="coerce")
+        df_freedom["Total Score"] = pd.to_numeric(df_freedom["Total Score"],errors="coerce")
 df_freedom = data_load()
 
 # Filters
 
 #adding min and max for slider
-min_score = int(df_freedom["Total Score"].min())
-max_score = int(df_freedom["Total Score"].max())
+min_score = df_freedom["Total Score"].min()
+max_score = df_freedom["Total Score"].max()
 
 '''
 Keep this section to add slider for PL scores and CL scores
