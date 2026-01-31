@@ -1,4 +1,4 @@
-# pages/5_Disclaimer.py
+# pages/1_Disclaimer.py
 import streamlit as st
 from data_utils import apply_dark_mode
 
