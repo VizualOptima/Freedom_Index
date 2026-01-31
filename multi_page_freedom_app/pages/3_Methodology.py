@@ -6,16 +6,19 @@ st.title("Methodology")
 template = apply_dark_mode()
 
 st.markdown("""
-## Data Source
-- **Freedom House — Freedom in the World (FIW)** dataset (editions 2013–2025 in the provided sheet).
-- Columns used include: *Total Score*, *Political Rights score*, *Civil Liberties score*, *Freedom Status*, *Region*, and others.
+## Research and Methodology
+Data used in this application originates from publicly available or third-party sources. All trademarks, data rights, and copyrights remain the property of their respective owners.
+
+This project is not affiliated with, endorsed by, or sponsored by any data provider.
+            
+- Details about research methodology can be found here : https://freedomhouse.org/reports/freedom-net/freedom-net-research-methodology
 
 ## Scoring
 - **Total Score**: Composite of Political Rights (PR) and Civil Liberties (CL) indicators.
 - **Political Rights score (PR)** and **Civil Liberties score (CL)**: Aggregated sub-indices per Freedom House definitions.
 - **Freedom Status**: Categorization (e.g., *Free*, *Partly Free*, *Not Free*) based on thresholds applied to PR/CL results.
 
-## Processing Steps
+## Application Processing Steps
 1. Load Excel sheet `FIW13-25` with header at row 2 (index 1).
 2. Standardize key column names; coerce numeric fields: *Year*, *Total Score*, *PR score*, *CL score*.
 3. Normalize the `C/T` flag to human-readable labels: *Country* vs *Territory*.
